@@ -12,7 +12,8 @@ namespace BootstrapMvcSample.Controllers
         private static List<HomeInputModel> _models = ModelIntializer.CreateHomeInputModels();
         public ActionResult Index()
         {
-           
+            ViewBag.Title = "CA 2";
+            
             var homeInputModels = _models;                                      
             return View(homeInputModels);
         }

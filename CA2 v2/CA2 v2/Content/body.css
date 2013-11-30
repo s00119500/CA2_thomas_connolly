@@ -1,4 +1,10 @@
   body {
             padding-top: 60px;
             padding-bottom: 40px;
-          }
+            
+            /* my changes */
+            color: #333;
+            background-color: #272525;
+            /* end of my changes */
+          
+            }/*end of body*/

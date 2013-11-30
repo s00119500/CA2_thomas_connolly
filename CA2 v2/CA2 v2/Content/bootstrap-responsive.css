@@ -8,6 +8,43 @@
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
 
+/*start of my css  */
+
+.text-glow {
+   /*font-size:20px;*/
+   color: #FFFFFF;
+   font-family:Arial;
+   }
+
+.text-glow:hover, .text-glow:focus, .text-glow:active {
+   -webkit-stroke-width: 5.3px;
+   -webkit-stroke-color: #FFFFFF;
+   -webkit-fill-color: #FFFFFF;
+   text-shadow: 1px 0px 20px blue;
+   -webkit-transition: width 0.3s; /*Safari & Chrome because thier special*/
+   transition: width 0.3s;
+   -moz-transition: width 0.3s; /* Firefox 4 */
+   -o-transition: width 0.3s; /* Opera */
+   }
+
+/*make a outline "glow" */
+.glowingOutline{
+	border: 1px solid #dadada; /* boder size, style, color*/
+	width: 200px;
+	height:200x;
+	background-color:white;
+	border-radius: 5px; /*rounds the div's corners*/
+	}/* end glowingOutline*/
+
+.glowingOutline:hover { /* will be triggered when hovered over*/
+    outline:none;
+    /*background-color:#900;*/
+    border-color:#F90; /*border color*/
+    box-shadow:0 0 200px #F00; /*px is the size of the shadow, folowed by the actual shadow color*/
+	}/*end glowingOutline:hover*/
+
+/*end of my css*/
+
 .clearfix {
   *zoom: 1;
 }
