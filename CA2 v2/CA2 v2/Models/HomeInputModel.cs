@@ -8,6 +8,7 @@ namespace Models
 {
     public class HomeInputModel
     {
+        
         public int Id { get; set; }
         [Required]
         public string Name { get; set; }

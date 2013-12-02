@@ -3,8 +3,9 @@
             padding-bottom: 40px;
             
             /* my changes */
-            color: #333;
-            background-color: #272525;
+            /*color: #333;
+            background-color: #272525;*/
             /* end of my changes */
-          
+            /*background-color:#736F6F;*/
+            background: #333 url("http://codepen.io/images/classy_fabric.png");/* background via code pen*/
             }/*end of body*/

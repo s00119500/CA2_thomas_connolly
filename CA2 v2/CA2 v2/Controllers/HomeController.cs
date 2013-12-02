@@ -9,13 +9,15 @@ namespace BootstrapMvcSample.Controllers
 {
     public class HomeController : BootstrapBaseController
     {
-        private static List<HomeInputModel> _models = ModelIntializer.CreateHomeInputModels();
+        private static List<HomeInputModel> _models = ModelIntializer.CreateHomeInputModels();// 1
+        
         public ActionResult Index()
         {
-            ViewBag.Title = "CA 2";
-            
-            var homeInputModels = _models;                                      
-            return View(homeInputModels);
+            //ViewBag.Title = "CA 2";
+            ViewData["Title"] = "CA 2";
+            //return View(); 
+            var homeInputModels = _models; //1                       
+            return View(homeInputModels); //1
         }
 
         [HttpPost]

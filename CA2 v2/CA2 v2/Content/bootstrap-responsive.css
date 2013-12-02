@@ -12,7 +12,10 @@
 
 .text-glow {
    /*font-size:20px;*/
-   color: #FFFFFF;
+   
+   /*color:orange;*/
+   color:darkorange;
+   /*color:orangered;*/
    font-family:Arial;
    }
 
@@ -20,7 +23,7 @@
    -webkit-stroke-width: 5.3px;
    -webkit-stroke-color: #FFFFFF;
    -webkit-fill-color: #FFFFFF;
-   text-shadow: 1px 0px 20px blue;
+   text-shadow: 1px 0px 50px darkorange;
    -webkit-transition: width 0.3s; /*Safari & Chrome because thier special*/
    transition: width 0.3s;
    -moz-transition: width 0.3s; /* Firefox 4 */
@@ -42,6 +45,10 @@
     border-color:#F90; /*border color*/
     box-shadow:0 0 200px #F00; /*px is the size of the shadow, folowed by the actual shadow color*/
 	}/*end glowingOutline:hover*/
+
+.white_Text {
+    color:white;
+}/*end of white text*/
 
 /*end of my css*/
 
