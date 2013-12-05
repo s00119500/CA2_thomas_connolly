@@ -4,11 +4,14 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Models;
+using CA2_v2;
 
 namespace BootstrapMvcSample.Controllers
 {
+    
     public class HomeController : BootstrapBaseController
     {
+        northwndEntities db = new northwndEntities();
         private static List<HomeInputModel> _models = ModelIntializer.CreateHomeInputModels();// 1
         
         public ActionResult Index()
@@ -16,8 +19,11 @@ namespace BootstrapMvcSample.Controllers
             //ViewBag.Title = "CA 2";
             ViewData["Title"] = "CA 2";
             //return View(); 
-            var homeInputModels = _models; //1                       
-            return View(homeInputModels); //1
+            //var homeInputModels = _models; //1                       
+            //return View(homeInputModels); //1
+
+            return View();
+
         }
 
         [HttpPost]

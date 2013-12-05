@@ -33,6 +33,7 @@ namespace BootstrapSupport
                 elementType = Model.GetType().GetGenericArguments()[0];
             }
             return elementType.GetProperties().Where(info => info.Name != elementType.IdentifierPropertyName()).OrderedByDisplayAttr().ToArray();
+               
         }
 
         public static PropertyInfo[] VisibleProperties(this Object model)
